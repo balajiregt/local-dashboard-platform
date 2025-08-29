@@ -1,0 +1,59 @@
+{
+	"cod": "200",
+	"message": 0,
+	"cnt": 40,
+	"list": [
+	  {
+		"dt": 1682046000,
+		"main": {
+		  "temp": 100.8,
+		  "feels_like": 2.7,
+		  "temp_min": 5.8,
+		  "temp_max": 5.8,
+		  "pressure": 1015,
+		  "sea_level": 1015,
+		  "grnd_level": 1011,
+		  "humidity": 90,
+		  "temp_kf": 0
+		},
+		"weather": [
+		  {
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10n"
+		  }
+		],
+		"clouds": {
+		  "all": 100
+		},
+		"wind": {
+		  "speed": 4.26,
+		  "deg": 73,
+		  "gust": 9.05
+		},
+		"visibility": 10000,
+		"pop": 0.9,
+		"rain": {
+		  "3h": 1.08
+		},
+		"sys": {
+		  "pod": "n"
+		},
+		"dt_txt": "2023-04-21 03:00:00"
+	  }
+	],
+	"city": {
+	  "id": 2643743,
+	  "name": "London",
+	  "coord": {
+		"lat": 51.5085,
+		"lon": -0.1257
+	  },
+	  "country": "GB",
+	  "population": 1000000,
+	  "timezone": 3600,
+	  "sunrise": 1681880215,
+	  "sunset": 1681930925
+	}
+  }
