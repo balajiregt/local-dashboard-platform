@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-08-25T09:34:40.457Z",
+  "reports": [
+    {
+      "id": "2025-08-25T09-34-40-18a3d400",
+      "timestamp": "2025-08-25T09:34:40.451Z",
+      "developer": "David Chen",
+      "branch": "main",
+      "summary": {
+        "total": 10,
+        "passed": 7,
+        "failed": 3,
+        "skipped": 0,
+        "expectedFails": 1,
+        "unexpectedFails": 2,
+        "expectedPasses": 7,
+        "unexpectedPasses": 0
+      },
+      "url": "reports/2025-08-25T09-34-40-18a3d400/report.json"
+    },
+    {
+      "id": "2025-08-25T09-34-40-0b82cbce",
+      "timestamp": "2025-08-25T09:34:40.446Z",
+      "developer": "Sarah Wilson",
+      "branch": "feature/auth-improvement",
+      "summary": {
+        "total": 10,
+        "passed": 8,
+        "failed": 2,
+        "skipped": 0,
+        "expectedFails": 1,
+        "unexpectedFails": 1,
+        "expectedPasses": 8,
+        "unexpectedPasses": 0
+      },
+      "url": "reports/2025-08-25T09-34-40-0b82cbce/report.json"
+    }
+  ]
+}
