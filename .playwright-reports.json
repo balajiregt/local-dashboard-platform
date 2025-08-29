@@ -1,0 +1,40 @@
+{
+  "name": "playwright-1",
+  "repository": "balajiregt/local-dashboard-platform",
+  "github": {
+    "token": "",
+    "pages": {
+      "url": "https://balajiregt.github.io/local-dashboard-platform",
+      "source": "gh-pages"
+    }
+  },
+  "localConfig": {
+    "developer": "balaji",
+    "uploadPath": "./test-results",
+    "includeSuccessful": false,
+    "includeFailures": true,
+    "autoUpload": false
+  },
+  "playwright": {
+    "testDir": "./tests",
+    "traceDir": "./test-results",
+    "tracePaths": [
+      "./test-results/**/trace.zip",
+      "./test-results/**/*.png",
+      "./test-results/**/*.webm"
+    ],
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "devices": [
+      "Desktop Chrome",
+      "iPhone 13",
+      "iPad"
+    ],
+    "collectTraces": "retain-on-failure",
+    "collectScreenshots": "only-on-failure",
+    "collectVideos": "retain-on-failure"
+  }
+}
