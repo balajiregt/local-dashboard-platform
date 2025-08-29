@@ -1,0 +1,116 @@
+{
+  "execution": {
+    "id": "2025-08-25T10-27-47-2aabb806",
+    "reportNumber": 85,
+    "uniqueId": "2025-08-25T10-27-47-2aabb806",
+    "developer": "bky13",
+    "timestamp": "2025-08-25T10:27:47.766Z",
+    "startTime": "2025-08-25T10:25:47.766Z",
+    "endTime": "2025-08-25T10:27:47.766Z",
+    "branch": "main",
+    "environment": "local",
+    "duration": 14892,
+    "intent": {
+      "purpose": "validation",
+      "description": "Validating functionality",
+      "expectFailures": false,
+      "targetTests": [
+        "authentication",
+        "core-functionality"
+      ],
+      "goals": [
+        "verify-stability"
+      ],
+      "context": "Local development testing"
+    },
+    "insights": {
+      "reasoning": "Running validation tests based on recent changes",
+      "expectedBehavior": "All critical tests should pass",
+      "actualBehavior": "All tests passed as expected",
+      "surprises": [
+        "All tests passed smoothly"
+      ],
+      "learnings": [
+        "System is stable"
+      ],
+      "nextSteps": [
+        "Continue development"
+      ],
+      "confidence": 9
+    },
+    "metadata": {
+      "gitCommit": "f0518630",
+      "gitDiff": "Recent changes",
+      "codeChanges": [
+        "src/components/",
+        "tests/"
+      ],
+      "relatedTickets": [
+        "DEV-282"
+      ],
+      "testRunReason": "local-development",
+      "tags": [
+        "validation",
+        "local",
+        "automated"
+      ]
+    }
+  },
+  "results": [
+    {
+      "testName": "Authentication › Login flow",
+      "status": "passed",
+      "duration": 3169,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Core › Main functionality",
+      "status": "passed",
+      "duration": 3302,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "UI › Component rendering",
+      "status": "passed",
+      "duration": 2954,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "API › Data fetching",
+      "status": "passed",
+      "duration": 3009,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Navigation › Page routing",
+      "status": "passed",
+      "duration": 2458,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "expectedFails": 0,
+    "unexpectedFails": 0,
+    "expectedPasses": 5,
+    "unexpectedPasses": 0
+  }
+}

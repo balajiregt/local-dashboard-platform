@@ -1,0 +1,71 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-01-15T10:30:00Z",
+  "reports": [
+    {
+      "id": "2024-01-15T10-25-30-abc123",
+      "timestamp": "2024-01-15T10:25:30Z",
+      "developer": "John Doe",
+      "branch": "feature/payment-flow",
+      "summary": {
+        "total": 15,
+        "passed": 12,
+        "failed": 3,
+        "skipped": 0
+      },
+      "url": "reports/2024-01-15T10-25-30-abc123/report.json"
+    },
+    {
+      "id": "2024-01-15T09-45-20-def456",
+      "timestamp": "2024-01-15T09:45:20Z",
+      "developer": "Jane Smith",
+      "branch": "main",
+      "summary": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0,
+        "skipped": 0
+      },
+      "url": "reports/2024-01-15T09-45-20-def456/report.json"
+    },
+    {
+      "id": "2024-01-15T08-30-15-ghi789",
+      "timestamp": "2024-01-15T08:30:15Z",
+      "developer": "Mike Johnson",
+      "branch": "feature/user-auth",
+      "summary": {
+        "total": 12,
+        "passed": 10,
+        "failed": 2,
+        "skipped": 0
+      },
+      "url": "reports/2024-01-15T08-30-15-ghi789/report.json"
+    },
+    {
+      "id": "2024-01-14T16-20-45-jkl012",
+      "timestamp": "2024-01-14T16:20:45Z",
+      "developer": "Sarah Wilson",
+      "branch": "feature/shopping-cart",
+      "summary": {
+        "total": 20,
+        "passed": 15,
+        "failed": 5,
+        "skipped": 0
+      },
+      "url": "reports/2024-01-14T16-20-45-jkl012/report.json"
+    },
+    {
+      "id": "2024-01-14T14-10-30-mno345",
+      "timestamp": "2024-01-14T14:10:30Z",
+      "developer": "David Chen",
+      "branch": "main",
+      "summary": {
+        "total": 18,
+        "passed": 18,
+        "failed": 0,
+        "skipped": 0
+      },
+      "url": "reports/2024-01-14T14-10-30-mno345/report.json"
+    }
+  ]
+} 

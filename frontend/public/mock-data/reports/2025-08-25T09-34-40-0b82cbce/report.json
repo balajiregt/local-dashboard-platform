@@ -1,0 +1,174 @@
+{
+  "execution": {
+    "id": "2025-08-25T09-34-40-0b82cbce",
+    "reportNumber": 22,
+    "uniqueId": "2025-08-25T09-34-40-0b82cbce",
+    "developer": "Sarah Wilson",
+    "timestamp": "2025-08-25T09:34:40.446Z",
+    "startTime": "2025-08-25T09:29:40.446Z",
+    "endTime": "2025-08-25T09:34:40.446Z",
+    "branch": "feature/auth-improvement",
+    "environment": "local",
+    "duration": 29117,
+    "intent": {
+      "purpose": "validation",
+      "description": "Running regression tests",
+      "expectFailures": false,
+      "targetTests": [
+        "authentication",
+        "checkout",
+        "payment"
+      ],
+      "goals": [
+        "verify-fix",
+        "ensure-stability"
+      ],
+      "context": "Pre-release testing"
+    },
+    "insights": {
+      "reasoning": "Running validation tests to ensure system stability",
+      "expectedBehavior": "All tests should pass with proper functionality",
+      "actualBehavior": "Most tests passed, some network-related timeouts observed",
+      "surprises": [
+        "Unexpected network latency",
+        "New authentication flow working well"
+      ],
+      "learnings": [
+        "Need better timeout handling",
+        "Network mocking would help"
+      ],
+      "nextSteps": [
+        "Add retry mechanism",
+        "Implement network mocking",
+        "Test on staging"
+      ],
+      "confidence": 7
+    },
+    "metadata": {
+      "gitCommit": "52b5cb94",
+      "gitDiff": "src/auth.ts\nsrc/payment.ts",
+      "codeChanges": [
+        "src/auth.ts",
+        "src/payment.ts"
+      ],
+      "relatedTickets": [
+        "ISSUE-602"
+      ],
+      "testRunReason": "local-development",
+      "tags": [
+        "validation",
+        "local",
+        "manual"
+      ]
+    }
+  },
+  "results": [
+    {
+      "testName": "Authentication › should login with valid credentials",
+      "status": "passed",
+      "duration": 1713,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Authentication › should reject invalid credentials",
+      "status": "passed",
+      "duration": 977,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Payment › should process payment successfully",
+      "status": "passed",
+      "duration": 1279,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Payment › should handle payment failures",
+      "status": "passed",
+      "duration": 684,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Checkout › should calculate totals correctly",
+      "status": "failed",
+      "duration": 1850,
+      "screenshots": [],
+      "expectedOutcome": "fail",
+      "actualOutcome": "fail",
+      "outcomeMatch": true,
+      "error": "Timeout 10000ms exceeded. Waiting for locator('.submit-button') to be visible",
+      "traceFile": "161d6f3f78b3d430fe45a394c6b783923b1f9cae.zip"
+    },
+    {
+      "testName": "Product Catalog › should display products",
+      "status": "passed",
+      "duration": 4106,
+      "screenshots": [
+        "7b77665994ba3d4eb7f2732aecd910387132ff3f.png",
+        "c581efa95440a71d5fa392603d266761fbf3be2f.png"
+      ],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "User Profile › should update profile information",
+      "status": "failed",
+      "duration": 4909,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "fail",
+      "outcomeMatch": false,
+      "error": "Timeout 10000ms exceeded. Waiting for locator('.submit-button') to be visible",
+      "traceFile": "4657611d6d9696bb995e884c15a80d335818d759.zip"
+    },
+    {
+      "testName": "Search › should find products by keyword",
+      "status": "passed",
+      "duration": 4980,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Shopping Cart › should add items to cart",
+      "status": "passed",
+      "duration": 5204,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    },
+    {
+      "testName": "Navigation › should navigate between pages",
+      "status": "passed",
+      "duration": 3415,
+      "screenshots": [],
+      "expectedOutcome": "pass",
+      "actualOutcome": "pass",
+      "outcomeMatch": true
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "passed": 8,
+    "failed": 2,
+    "skipped": 0,
+    "expectedFails": 1,
+    "unexpectedFails": 1,
+    "expectedPasses": 8,
+    "unexpectedPasses": 0
+  }
+}

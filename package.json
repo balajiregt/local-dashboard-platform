@@ -1,0 +1,40 @@
+{
+  "name": "playwright-trace-intelligence-platform",
+  "version": "1.0.0",
+  "description": "AI-powered Playwright trace analysis platform for GitHub-based test report consolidation",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:cli\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:cli": "cd cli && npm run dev",
+    "build": "npm run build:frontend && npm run build:cli",
+    "build:frontend": "cd frontend && npm run build",
+    "build:cli": "cd cli && npm run build",
+    "test": "npm run test:frontend && npm run test:cli",
+    "test:frontend": "cd frontend && npm test",
+    "test:cli": "cd cli && npm test",
+    "install:all": "npm install && cd frontend && npm install && cd ../cli && npm install",
+    "clean": "rm -rf node_modules frontend/node_modules cli/node_modules frontend/build cli/dist"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "ai",
+    "trace-analysis",
+    "github-pages",
+    "test-automation"
+  ],
+  "author": "Playwright Trace Intelligence Platform",
+  "license": "MIT",
+  "workspaces": [
+    "frontend",
+    "cli"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lerna": "^7.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+} 
