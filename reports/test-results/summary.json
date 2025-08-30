@@ -1,0 +1,1 @@
+{"project": "playwright-1", "developer": "balaji", "timestamp": "2024-08-30T01:09:00.000Z", "testRun": {"total": 3, "passed": 0, "failed": 3, "skipped": 0, "browsers": ["chromium", "firefox", "webkit"]}, "description": "E2E testing of prelogin products functionality", "goals": ["Verify user authentication", "Test logout functionality", "Validate cross-browser compatibility"]}}
